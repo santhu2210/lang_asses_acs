@@ -1,0 +1,39 @@
+FROM python:3.6.8-slim-jessie
+
+ARG username=la_acs_user
+ARG userid=10005
+ARG deployment_folder=la_acs_deployment
+ARG logdir=la_acs_log_dir
+
+RUN echo "building image with username: ${username}, userid: ${userid} and deployment will be present inside ${deployment_folder}"
+
+RUN apt-get update && apt-get install -y --no-install-recommends curl g++
+
+RUN useradd -u ${userid} -m -s /bin/bash -N ${username}
+
+COPY requirements.txt /home/${username}/requirements.txt
+RUN pip install -r /home/${username}/requirements.txt
+RUN rm /home/${username}/requirements.txt
+
+## install nltk all packages
+RUN python -m nltk.downloader wordnet
+
+## down and install spacy english
+RUN python -m spacy download en
+
+USER ${username}
+RUN mkdir /home/${username}/${deployment_folder}
+
+# create a log directory
+RUN mkdir /home/${username}/${deployment_folder}/${logdir}
+
+COPY server /home/${username}/${deployment_folder}/server
+COPY language_assessment_core /home/${username}/${deployment_folder}/language_assessment_core
+
+
+ENV PYTHONPATH "${PYTHONPATH}:/home/${username}/${deployment_folder}"
+ENV LA_ACS_LOG_DIR "/home/${username}/${deployment_folder}/${logdir}"
+
+WORKDIR /home/${username}/${deployment_folder}/server
+
+EXPOSE 8000

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workFlowMeta version="1.0" xsi:schemaLocation="http://www.rsc.org/schema/metainfo http://www.rsc.org/dtds/workFlowMeta.xsd" xmlns="http://www.rsc.org/schema/metainfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <journal>
+    <shortCode>CE</shortCode>
+    <abbreviation>CrystEngComm</abbreviation>
+    <title>CrystEngComm</title>
+    <email>crystengcomm@rsc.org</email>
+  </journal>
+  <ms>
+    <ID>C9CE00759H</ID>
+    <DOI>10.1039/C9CE00759H</DOI>
+    <typeCode>ART</typeCode>
+    <typeDescription>Paper</typeDescription>
+    <workingTitle>A new Zn(II)-based 3D metal–organic framework with uncommon sev topology and its photocatalytic property for the degradation of organic dyes</workingTitle>
+    <receivedDate>
+      <year>2019</year>
+      <month>May</month>
+      <day>17</day>
+    </receivedDate>
+    <acceptedDate>
+      <year>2019</year>
+      <month>June</month>
+      <day>24</day>
+    </acceptedDate>
+    <editorialOfficeCode>CAMBS</editorialOfficeCode>
+    <ESI>true</ESI>
+    <crystalData>true</crystalData>
+    <printColour>true</printColour>
+    <webColour>false</webColour>
+    <noOfPagesInProof>1</noOfPagesInProof>
+    <individualPageColour>0</individualPageColour>
+    <CCDCValues>1898141</CCDCValues>
+    <themedIssueFootnote />
+  </ms>
+  <authors>
+    <author role="corresponding">
+      <firstName>Jian-Qiang</firstName>
+      <middleName></middleName>
+      <lastName>Liu</lastName>
+      <suffix></suffix>
+      <salutation>Professor</salutation>
+      <email>jianqiangliu2010@126.com</email>
+      <orcid>0000-0002-0553-7937</orcid>
+      <!--Invalid researcher_id: http://orcid.org/0000-0002-0553-7937-->
+      <affiliation>
+        <inst>Guangdong Medical University</inst>
+        <dept>College of Pharmacy, Dongguan</dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1>Guangdong Medical University, College of Pharmacy, Dongguan, 523808, P. R. China</addr1>
+        <addr2></addr2>
+        <addr3></addr3>
+        <city>Dongguan</city>
+        <state>Guangdong</state>
+        <country>China</country>
+        <postCode></postCode>
+        <phone></phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+    <author role="co-author">
+      <firstName>Ying</firstName>
+      <middleName></middleName>
+      <lastName>Pan</lastName>
+      <suffix></suffix>
+      <salutation>Miss</salutation>
+      <email>ying-p@163.com</email>
+      <affiliation>
+        <inst>Guangdong Medical University</inst>
+        <dept>College of Pharmacy</dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1></addr1>
+        <addr2></addr2>
+        <addr3></addr3>
+        <city>Dongguan</city>
+        <state></state>
+        <country>China</country>
+        <postCode></postCode>
+        <phone></phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+    <author role="co-author">
+      <firstName>Qiongjie</firstName>
+      <middleName></middleName>
+      <lastName>Ding</lastName>
+      <suffix></suffix>
+      <salutation>Dr</salutation>
+      <email>dingqj780618@126.com</email>
+      <affiliation>
+        <inst>Guangdong Medical University</inst>
+        <dept></dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1></addr1>
+        <addr2></addr2>
+        <addr3></addr3>
+        <city>Zhanjiang</city>
+        <state>Guangdong</state>
+        <country>China</country>
+        <postCode></postCode>
+        <phone></phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+    <author role="co-author">
+      <firstName>Hongjia</firstName>
+      <middleName></middleName>
+      <lastName>Xu</lastName>
+      <suffix></suffix>
+      <salutation>Miss</salutation>
+      <email>xuhongjia529@163.com</email>
+      <affiliation>
+        <inst>Guangdong Medical University</inst>
+        <dept></dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1></addr1>
+        <addr2></addr2>
+        <addr3></addr3>
+        <city>Zhanjiang</city>
+        <state>Guangdong</state>
+        <country>China</country>
+        <postCode></postCode>
+        <phone></phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+    <author role="co-author">
+      <firstName>Chunyue</firstName>
+      <middleName></middleName>
+      <lastName>Shi</lastName>
+      <suffix></suffix>
+      <salutation>Dr</salutation>
+      <email>chyshi@ntu.edu.cn</email>
+      <affiliation>
+        <inst>Nantong University</inst>
+        <dept></dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1></addr1>
+        <addr2></addr2>
+        <addr3></addr3>
+        <city>Nantong</city>
+        <state></state>
+        <country>China</country>
+        <postCode></postCode>
+        <phone></phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+    <author role="co-author">
+      <firstName>AMITA</firstName>
+      <middleName></middleName>
+      <lastName>SINGH</lastName>
+      <suffix></suffix>
+      <salutation>Miss</salutation>
+      <email>singhamita3010@gmail.com</email>
+      <orcid>0000-0003-0062-2064</orcid>
+      <affiliation>
+        <inst>University of Lucknow</inst>
+        <dept>chemistry</dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1>uttar pradesh </addr1>
+        <addr2>lucknow</addr2>
+        <addr3>LUCKNOW</addr3>
+        <city>Lucknow</city>
+        <state>Uttar Pradesh</state>
+        <country>India</country>
+        <postCode></postCode>
+        <phone>8765762696</phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+    <author role="co-author">
+      <firstName>Abhinav</firstName>
+      <middleName></middleName>
+      <lastName>Kumar</lastName>
+      <suffix></suffix>
+      <salutation>Dr</salutation>
+      <email>abhinavmarshal@gmail.com</email>
+      <orcid>0000-0001-8441-7521</orcid>
+      <affiliation>
+        <inst>University of Lucknow Faculty of Science</inst>
+        <dept>Chemistry</dept>
+        <personTitle></personTitle>
+        <room></room>
+        <addr1></addr1>
+        <addr2></addr2>
+        <addr3></addr3>
+        <city>Lucknow</city>
+        <state></state>
+        <country>India</country>
+        <postCode></postCode>
+        <phone></phone>
+        <fax></fax>
+      </affiliation>
+    </author>
+  </authors>
+  <files>
+    <file>
+      <filename>C9CE00759H.docx</filename>
+    </file>
+    <file>
+      <filename>C9CE00759H_metadata.xml</filename>
+    </file>
+    <file>
+      <filename>synposis.docx</filename>
+    </file>
+    <noOfImages>0</noOfImages>
+  </files>
+  <workFlow type="externalEditing_E-IEXT">
+    <currentTask>E-IEXT</currentTask>
+    <supplierName>SPi</supplierName>
+    <dueDate>2019-06-28T07:58:20</dueDate>
+    <sentFromRSC>2019-06-26T07:58:20</sentFromRSC>
+  </workFlow>
+  <supplierProofingInfo>
+    <reproofRequested>false</reproofRequested>
+    <revisedESI>false</revisedESI>
+    <levelOfProofCorrections>0</levelOfProofCorrections>
+    <commentFromAuthor />
+  </supplierProofingInfo>
+</workFlowMeta>

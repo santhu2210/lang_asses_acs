@@ -1,0 +1,290 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#"><img src="{% static 'images/ccs_logo_nav.png' %}">
+                </a>
+                <a class="navbar-brand hidden" href="#"><img src="{% static 'images/logo2.png' %}" alt="Logo">
+                </a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                       <!--  <a href= "#"> <i class="menu-icon fa fa-dashboard"></i>Check Stats </a> -->
+                    </li>
+                    <!-- /.menu-title -->
+<!--                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>navbar</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-puzzle-piece"></i><a href="#">sample dropdown1</a>
+                            </li>
+                            <li><i class="fa fa-id-badge"></i><a href="#">sample dropdown2</a>
+                            </li>
+                            <li><i class="fa fa-bars"></i><a href="#">sample dropdown3</a>
+                            </li>
+                    </li> -->
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa-bars"></i></a>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="{% static 'images/admin.jpg' %}" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="/profile/"><i class="fa fa- user"></i>My Profile</a>
+
+<!--                             <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a> -->
+
+                            <a class="nav-link" href="/logout"><i class="fa fa-power -off"></i>Logout</a>
+                        </div>
+                    </div>
+
+                    <div class="language-select dropdown" id="language-select">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="language" aria-haspopup="true" aria-expanded="true">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="language">
+                            <div class="dropdown-item">
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-es"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-us"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-it"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- /header -->
+        <!-- Header-->
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                 <div class="page-header float-right ">
+                    <a id="link-tag" href="{% url 'appserver:uploading' %}" > Upload</a>
+                 </div>                
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+
+                <div class="row">
+
+                        <label>From Date: </label>
+                            <div id="datepicker_from" class="input-group date " data-date-format="dd/mm/yyyy">
+                                <input id="txt_datepicker_from" class="form-control date-range-filter" type="text" readonly />
+                                <span class="input-group-addon"><i class="menu-icon fa fa-calendar"></i></span>
+                            </div>
+
+                        <label>To Date: </label>
+                            <div id="datepicker_to" class="input-group date " data-date-format="dd/mm/yyyy">
+                                <input id="txt_datepicker_to" class="form-control date-range-filter" type="text" readonly />
+                                <span class="input-group-addon"><i class="menu-icon fa fa-calendar"></i></span>
+                            </div>
+
+<!-- <a href="{#% url 'myview' %#}?friend=foobar"> -->
+
+                            <button  type="button" class="btn btn-primary btn-sm" id= "download_doc_btn" onclick="download_modify_doc()" >
+                                <i class="menu-icon fa fa-download"> </i> Download
+                            </button>
+
+                    <table id="gallery" class="table table-striped table-bordered " cellspacing="0" style="width:100%"> <!-- table-sm -->
+                      <thead>
+                        <tr>
+                            <th scope="col"> Document   </th>
+                            <th scope="col"> Class </th>
+                            <th scope="col"> Grammar & Language</th>
+                            <th scope="col">  Topic </th>
+                            <th scope="col"> No. Of Words </th>
+                            <th scope="col"> Journal Type </th>
+                            <th scope="col"> Author Nationality </th>
+                            <th scope="col"> Article Type </th>
+                            <th scope="col"> Created Date </th> 
+                            <th scope="col"> Modified Date </th> 
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for score in scores %}
+                          <tr>
+                            <td><a href="/edit/{{ score.document_id }}">{{ score.document }}</a></td>
+                            <td><strong style="font-size:18px; text-align: center; color:Green;">{{ score.overall_score }} </strong> </td>
+                            <td>{{ score.grammer_language }}</td>
+                            <td><strong style="font-size:18px; text-align: center;">{{ score.topic }} </strong> </td>
+                            <td>{{ score.no_of_words }}</td>
+                            <td>{{ score.journal_title }}</td>
+                            <td>{{ score.author_nationality }}</td>
+                            <td>{{ score.article_type }}</td>
+                            <td>{{ score.create_date }}</td>
+                            <td>{{ score.modified_date }}</td>                            
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- .animated -->
+        </div>
+        <!-- .content -->
+<script type="text/javascript">
+
+    var table = jQuery('#gallery').DataTable();    
+
+  jQuery(document).ready(function(){
+
+        jQuery('#download_doc_btn').hide();
+
+    //jQuery('.dataTables_length').addClass('bs-select');
+
+  });
+
+
+    // Extend dataTables search
+    jQuery.fn.dataTable.ext.search.push(
+          function(settings, data, dataIndex) {
+            var from_date = jQuery('#txt_datepicker_from').val();
+            var to_date = jQuery('#txt_datepicker_to').val();
+            var createAt = data[8] || 0; // Our date column in the table 
+            //debugger;
+            var dateformat = "DD/MM/YYYY";
+            //moment("22/01/2019", ).isSameOrAfter(moment("21/02/2019", "DD/MM/YYYY"))     (from_date == "" || to_date == "") ||
+
+
+            if (
+              (moment(createAt, dateformat).isSameOrAfter(moment(from_date, dateformat)) && moment(createAt, dateformat).isSameOrBefore(moment(to_date, dateformat)))
+              ) {
+                jQuery('#download_doc_btn').show();
+                return true;
+            }
+            if (from_date == "" || to_date == "")
+            {
+                jQuery('#download_doc_btn').hide();
+                return true;
+            }
+            if(moment(from_date, dateformat).isAfter(moment(to_date, dateformat)))
+            {
+                jQuery('#download_doc_btn').hide();
+                return false;
+            }
+
+    });
+
+
+    jQuery(function () {
+    /*    jQuery("#datepicker_from").datepicker().datepicker('update', new Date());
+        jQuery("#datepicker_to").datepicker().datepicker('update', new Date());*/
+
+          jQuery("#datepicker_from").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          });
+
+          jQuery("#datepicker_to").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          });
+
+
+        jQuery('.date-range-filter').change(function() {
+            table.draw();
+        });
+
+
+/*        jQuery("#download_doc_btn").click(function (){
+        //console.log("doc path-->", window.docUrl);
+        var link=document.createElement('a');
+        document.body.appendChild(link);
+        link.href='{% url 'appserver:download_mod' %}?from_date=from_date&to_date=to_date';
+        //link.download = 'AltText_doc';
+        console.log("link -->", link);
+        //link.click();
+      }*/
+
+
+    });
+
+    function download_modify_doc() {
+
+        var from_date = jQuery('#txt_datepicker_from').val();
+        var to_date = jQuery('#txt_datepicker_to').val();
+        //console.log("doc path-->", window.docUrl);
+        //debugger;
+        var link=document.createElement('a');
+        document.body.appendChild(link);
+        link.href='{% url 'appserver:download_mod' %}?from_date='+from_date+'&to_date='+to_date+'&/';
+        //link.download = 'AltText_doc';
+        console.log("link -->", link);
+        link.click();
+
+    }
+
+
+</script>
+
+</div>
+
+{% endblock %}
+
+{% block jqueryscript %}
+<link rel="stylesheet" href="{% static 'assets/css/addons/dataTables.bootstrap4.min.css' %}" type="text/css" />
+<script src="{% static 'assets/js/addons/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'assets/js/addons/dataTables.bootstrap4.min.js' %}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="{% static 'assets/js/moment.js' %}"></script>
+<!-- <link rel="stylesheet" href="{% static 'assets/css/addons/datatables.min.css' %}" type="text/css" />
+<script src="{% static 'assets/js/addons/datatables.min.js' %}"></script> -->
+
+{% endblock %}
