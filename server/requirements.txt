@@ -12,7 +12,7 @@ docx2txt==0.7
 ReadabilityCalculator==0.2.37
 PyMySQL==0.9.3
 textstat==0.5.4
-nltk==3.2.1
+nltk==3.4.5
 numpy==1.15.1
 glob2==0.6
 spacy==2.0.13
