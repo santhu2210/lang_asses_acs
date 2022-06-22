@@ -13,7 +13,7 @@ ReadabilityCalculator==0.2.37
 PyMySQL==0.9.3
 textstat==0.5.6
 nltk==3.2.1
-numpy==1.15.1
+numpy==1.22.0
 glob2==0.6
 spacy==2.0.13
 language-check==1.1
